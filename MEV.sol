@@ -2,11 +2,11 @@
 pragma solidity 0.8.17;
 
 contract MEV {
-    struct Adjustment(
+    struct Adjustment {
         uint256 adjustment0,
         uint256 adjustment1,
         uint256 adjustmentToken0
-    )
+    }
 
 function getOrderedReserves(
     address pool0_,
