@@ -42,5 +42,5 @@ function getOrderedReserves(
             pool1Reserve0 += adjustment_.adjustment1;            
         }        
     }
-}
+  }
 }
