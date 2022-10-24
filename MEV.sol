@@ -35,11 +35,11 @@ function getOrderedReserves(
         }
     } else {
         if(adjustment_.adjustmentToken0 == IUniswapV2Pair(pool1_).token0()) {
-            pool1Reserve0 -= adjustment_.adjustment0;
-            pool1Reserve1 += adjustment_.adjustment1;
-        } else {
             pool1Reserve1 -= adjustment_.adjustment0;
-            pool1Reserve0 += adjustment_.adjustment1;            
+            pool1Reserve0 += adjustment_.adjustment1;
+        } else {
+            pool1Reserve0 -= adjustment_.adjustment0;
+            pool1Reserve1 += adjustment_.adjustment1;            
         }        
       }
    }
